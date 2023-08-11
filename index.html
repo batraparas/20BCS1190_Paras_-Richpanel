@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Subscription Management</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="register-form">
+                <h2>Register</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+            <form id="login-form">
+                <h2>Login</h2>
+                <input type="text" placeholder="Username" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <div id="plans">
+                <h2>Available Plans</h2>
+                <div class="plan">
+                    <h3>Basic</h3>
+                    <p>Monthly Price: 100 INR</p>
+                    <p>Yearly Price: 1000 INR</p>
+                    <button class="select-plan" data-plan="basic">Select</button>
+                </div>
+                <!-- Repeat for other plans -->
+            </div>
+            <form id="payment-form">
+                <h2>Payment Details</h2>
+                <input type="text" placeholder="Card Number" required>
+                <input type="text" placeholder="Expiry Month" required>
+                <input type="text" placeholder="Expiry Year" required>
+                <input type="text" placeholder="CVV" required>
+                <button type="submit">Pay and Subscribe</button>
+            </form>
+            <button id="cancel-plan" style="display: none;">Cancel Subscription</button>
+        </div>
+        <div id="selected-plan-details" style="display: none;">
+            <h2>Selected Plan Details</h2>
+            <p id="selected-plan-name"></p>
+            <p id="selected-plan-price"></p>
+            <p id="selected-plan-billing"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

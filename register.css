@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+.center-align {
+    text-align: center;
+    padding-bottom: 25px;
+}
+input[type="checkbox"] {
+    -webkit-appearance: checkbox;
+       -moz-appearance: checkbox;
+            appearance: checkbox;
+    display: inline-block;
+    width: auto;
+  }
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(31,76,145,255);
+
+}
+
+.register-form {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 50px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    width: 270px;
+    text-align: left;
+}
+
+h2 {
+    margin: 0 0 10px;
+}
+
+input {
+    width: 100%;
+    padding: 12px 12px 10px 3px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+label {
+    display: block;
+    margin-bottom: 15px;
+}
+
+button {
+    background-color:rgba(31,76,145,255);;
+    color: #fff;
+    border: none;
+    padding: 10px 110px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+.check{
+    text-align: left;
+}
+.login-link {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.login-link a:hover {
+    text-decoration: underline;
+}
